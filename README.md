@@ -23,8 +23,7 @@ TestEx.out - The expected output from the output stream of the program
 TestEx.actual - A temp file that stores the actual output of the program before comparing it to the .out file (Will be removed in later updates)
 
 
-
------------------------------------------------------------------------------------------------------------------------------------------- A explination of the example files
+A explination of the example files
 ----------------------------------------------------------------------------------------------------------------------------------------
 If we have a an executable called "Run" and a SuiteFile called "suite" containing "Test1 Test2". Then runSuite will run a test for both Test1 and Test2. 
 
