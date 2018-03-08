@@ -22,7 +22,7 @@ for word in $(cat "${1}"); do
 	if [ "$Z" != "$Y" ]; then
 		echo "Test failed:" "${word}"
 		#echo "Args: ${X}"
-		echo "Input: ${A}"
+		#echo "Input: ${A}"
 		echo "Expected: ${Y}"
 		echo "Actual: ${Z}" 
 	else
