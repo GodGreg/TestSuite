@@ -7,7 +7,7 @@ Usage
 ----------------------------------------------------------------------------------------------------------------------------------------
 Usage: ./testSuite SuiteFile Executable
 
-SuiteFile: Contains all the names of your tests (strings) seperated by whitespace
+SuiteFile: Contains all the names of your tests (strings) separated by whitespace
 (Example: test1 test2 test3)
 
 Executable: Your compiled program
@@ -26,10 +26,10 @@ TestEx.actual - A temp file that stores the actual output of the program before 
 
 A explanation of the example files
 ----------------------------------------------------------------------------------------------------------------------------------------
-If we have a an executable called "Run" and a SuiteFile called "suite" containing "Test1 Test2". Then runSuite will run a test for both Test1 and Test2. 
+We are given two tests "Example" and "Error". Both are listed inside the ExampleSuite file
 
-You are responsible for creating any .in and .args files. RunSuite will use Test1.in and Test1.args, execute your program and pipe the output to Test1.actual.
+You are responsible for creating any .in, .args and .out files. RunSuite will use Example.in and Example.args, execute your program and pipe the output to Example.actual. It will then compare the Example.actual file with the Example.out file and determine if the test fails or passes. The output from this test can be seen in ExampleTestOutput.
 
-You are also responsbile for creating a Test1.out file which contains the expected output, this will be compared with the actual output and RunSuite will tell you if the test failed or passes, if it fails it will give you details or input, args, expected and actual text as well as any messages printed to stdOut.
+If a test fails it will give you details of input, args, expected and actual text as well as any error messages printed to stdErr. If you use V2 then you will have less output and a more concise error message. 
 
 
