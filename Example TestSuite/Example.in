@@ -1,0 +1,12 @@
+begin:
+label: beq $0, $0, after
+jr $4
+after:
+sw $31, 16($0)
+lis $4
+abc0: abc1: .word after
+loadStore:
+lw $20, 4($0)
+sw $20, 28($0)
+end: 
+
