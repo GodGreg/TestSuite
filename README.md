@@ -18,8 +18,11 @@ Files associated with testing
 Example Usage: "TestEx"
 
 TestEx.args - Arguments suplied to the command line - ignored if empty or doesn't exist. 
+
 TestEx.in - Fed as an input stream into the program - can be empty. Uses a .in file for each file listed in SuiteFile (Ex. test1.in)
+
 TestEx.out - The expected output from the output stream of the program
+
 TestEx.actual - A temp file that stores the actual output of the program before comparing it to the .out file (Will be removed in later updates)
 
 
